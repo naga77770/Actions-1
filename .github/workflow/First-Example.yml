@@ -1,0 +1,20 @@
+name: My First Workflow
+
+on: push
+
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Welcome Message 
+      run: echo "Welcome to my first Workflow"
+
+    - name: Create File
+      run: touch file1
+
+    - name: list files
+      run: ls
+
+    - name: Read File 
+      run: cat file1
+  
